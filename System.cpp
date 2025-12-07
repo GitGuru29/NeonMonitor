@@ -11,15 +11,19 @@ float System::GetMemoryUsage() {
 
 std::pair<float, float> System::GetNetworkStats() {
     Parser::NetStats current = Parser::GetNetworkTraffic();
-
     long rx_delta = current.rx_bytes - last_rx_bytes;
     long tx_delta = current.tx_bytes - last_tx_bytes;
-
     last_rx_bytes = current.rx_bytes;
     last_tx_bytes = current.tx_bytes;
-
-    // Convert bytes to KB
     return { (float)rx_delta / 1024.0f, (float)tx_delta / 1024.0f };
+}
+
+int System::GetBattery() {
+    return Parser::GetBatteryPercentage();
+}
+
+std::vector<Parser::DiskStats> System::GetDisks() {
+    return Parser::GetDiskUsage();
 }
 
 std::vector<Process> System::GetProcesses() {

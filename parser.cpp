@@ -8,6 +8,7 @@
 #include <numeric>
 #include <algorithm>
 #include <iostream>
+#include <sys/statvfs.h> 
 
 float Parser::CpuUsage() {
     std::ifstream file("/proc/stat");
@@ -40,26 +41,83 @@ Parser::NetStats Parser::GetNetworkTraffic() {
     std::string line;
     long total_rx = 0;
     long total_tx = 0;
-
-    std::getline(file, line); // header 1
-    std::getline(file, line); // header 2
-
+    std::getline(file, line); 
+    std::getline(file, line); 
     while (std::getline(file, line)) {
         std::istringstream ss(line);
         std::string iface;
         long rx, tx, junk;
-        
         ss >> iface; 
         if (line.find("lo:") != std::string::npos) continue;
-
         ss >> rx;
         for (int i = 0; i < 7; ++i) ss >> junk;
         ss >> tx;
-
         total_rx += rx;
         total_tx += tx;
     }
     return {total_rx, total_tx};
+}
+
+// --- BATTERY FIX: Initialize to -1 ---
+int Parser::GetBatteryPercentage() {
+    std::vector<std::string> bats = {"BAT0", "BAT1"};
+    for (const auto& bat : bats) {
+        std::string path = "/sys/class/power_supply/" + bat + "/capacity";
+        std::ifstream file(path);
+        if (file.is_open()) {
+            int cap = -1; // Explicitly set to -1 before reading
+            file >> cap;
+            if (cap >= 0 && cap <= 100) return cap;
+        }
+    }
+    return -1; // Return -1 if no valid battery found
+}
+
+std::vector<Parser::DiskStats> Parser::GetDiskUsage() {
+    std::vector<Parser::DiskStats> disks;
+    std::ifstream file("/proc/mounts");
+    std::string line;
+
+    while (std::getline(file, line)) {
+        std::istringstream ss(line);
+        std::string device, mountpoint, fstype;
+        ss >> device >> mountpoint >> fstype;
+
+        // Skip /boot partitions
+        if (mountpoint.find("/boot") == 0) continue;
+
+        if (device.find("/dev/") == 0 && 
+           (fstype == "ext4" || fstype == "btrfs" || fstype == "vfat" || fstype == "ntfs" || fstype == "xfs")) {
+            
+            struct statvfs stat;
+            if (statvfs(mountpoint.c_str(), &stat) == 0) {
+                long total = stat.f_blocks * stat.f_frsize;
+                long available = stat.f_bavail * stat.f_frsize;
+                long used = total - available;
+                
+                float percent = 0.0f;
+                if (total > 0) percent = (float)used / (float)total * 100.0f;
+
+                std::string name = mountpoint;
+                if (mountpoint == "/") name = "ROOT";
+                else if (mountpoint == "/home") name = "HOME";
+                else if (mountpoint.find("/run/media/") == 0) {
+                    size_t last_slash = mountpoint.find_last_of('/');
+                    if (last_slash != std::string::npos) {
+                        name = mountpoint.substr(last_slash + 1);
+                    }
+                }
+
+                // Truncate long UUID names (e.g., "28aa095f..." -> "28aa0...")
+                if (name.length() > 8 && name != "ROOT" && name != "HOME") {
+                    name = name.substr(0, 6) + "..";
+                }
+
+                disks.push_back({name, total, used, percent});
+            }
+        }
+    }
+    return disks;
 }
 
 std::vector<int> Parser::Pids() {
@@ -84,18 +142,15 @@ float Parser::ProcessCpuUsage(int pid) {
     std::vector<std::string> values;
     while (file >> value) values.push_back(value);
     if (values.size() < 22) return 0.0;
-
     long utime = stol(values[13]);
     long stime = stol(values[14]);
     long cutime = stol(values[15]);
     long cstime = stol(values[16]);
     long starttime = stol(values[21]);
-
     long total_time = utime + stime + cutime + cstime;
     long uptime;
     std::ifstream uptime_file("/proc/uptime");
     uptime_file >> uptime;
-
     long hertz = sysconf(_SC_CLK_TCK);
     float seconds = uptime - (starttime / hertz);
     return 100.0 * ((total_time / hertz) / seconds);
@@ -113,7 +168,7 @@ float Parser::ProcessMemoryUsage(int pid) {
             break;
         }
     }
-    return memory / 1024; // Convert to MB
+    return memory / 1024; 
 }
 
 std::string Parser::Command(int pid) {
