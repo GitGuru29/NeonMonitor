@@ -20,6 +20,7 @@ namespace Parser {
     float CpuUsage();
     float MemoryUsage();
     NetStats GetNetworkTraffic();
+    bool IsConnected(); // <--- NEW CHECK
     int GetBatteryPercentage();
     std::vector<DiskStats> GetDiskUsage();
     std::vector<int> Pids();

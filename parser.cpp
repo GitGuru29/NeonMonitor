@@ -9,6 +9,7 @@
 #include <algorithm>
 #include <iostream>
 #include <sys/statvfs.h> 
+#include <cstring>
 
 float Parser::CpuUsage() {
     std::ifstream file("/proc/stat");
@@ -58,19 +59,42 @@ Parser::NetStats Parser::GetNetworkTraffic() {
     return {total_rx, total_tx};
 }
 
-// --- BATTERY FIX: Initialize to -1 ---
+// --- CONNECTIVITY CHECK ---
+bool Parser::IsConnected() {
+    DIR* dir = opendir("/sys/class/net");
+    if (!dir) return false;
+
+    struct dirent* entry;
+    while ((entry = readdir(dir)) != nullptr) {
+        std::string iface = entry->d_name;
+        // Skip loopback and parent dirs
+        if (iface == "." || iface == ".." || iface == "lo") continue;
+
+        std::string path = "/sys/class/net/" + iface + "/operstate";
+        std::ifstream file(path);
+        std::string state;
+        // If ANY interface says "up", we are connected
+        if (file >> state && state == "up") {
+            closedir(dir);
+            return true;
+        }
+    }
+    closedir(dir);
+    return false;
+}
+
 int Parser::GetBatteryPercentage() {
-    std::vector<std::string> bats = {"BAT0", "BAT1"};
+    int cap = -1; 
+    std::vector<std::string> bats = {"BAT0", "BAT1", "BAT", "CMB0"};
     for (const auto& bat : bats) {
         std::string path = "/sys/class/power_supply/" + bat + "/capacity";
         std::ifstream file(path);
         if (file.is_open()) {
-            int cap = -1; // Explicitly set to -1 before reading
             file >> cap;
             if (cap >= 0 && cap <= 100) return cap;
         }
     }
-    return -1; // Return -1 if no valid battery found
+    return -1;
 }
 
 std::vector<Parser::DiskStats> Parser::GetDiskUsage() {
@@ -83,7 +107,6 @@ std::vector<Parser::DiskStats> Parser::GetDiskUsage() {
         std::string device, mountpoint, fstype;
         ss >> device >> mountpoint >> fstype;
 
-        // Skip /boot partitions
         if (mountpoint.find("/boot") == 0) continue;
 
         if (device.find("/dev/") == 0 && 
@@ -108,7 +131,6 @@ std::vector<Parser::DiskStats> Parser::GetDiskUsage() {
                     }
                 }
 
-                // Truncate long UUID names (e.g., "28aa095f..." -> "28aa0...")
                 if (name.length() > 8 && name != "ROOT" && name != "HOME") {
                     name = name.substr(0, 6) + "..";
                 }

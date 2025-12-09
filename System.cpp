@@ -18,6 +18,11 @@ std::pair<float, float> System::GetNetworkStats() {
     return { (float)rx_delta / 1024.0f, (float)tx_delta / 1024.0f };
 }
 
+// --- NEW ---
+bool System::IsConnected() {
+    return Parser::IsConnected();
+}
+
 int System::GetBattery() {
     return Parser::GetBatteryPercentage();
 }
