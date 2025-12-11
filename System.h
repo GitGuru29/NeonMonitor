@@ -15,8 +15,13 @@ public:
     float GetCpuUsage();
     float GetMemoryUsage();
     std::pair<float, float> GetNetworkStats();
-    bool IsConnected(); // <--- NEW
+    bool IsConnected(); 
     int GetBattery(); 
+    
+    // --- PROCESS CONTROL ---
+    void TerminateProcess(int pid); // Polite close
+    void KillProcess(int pid);      // Force close
+    
     std::vector<Parser::DiskStats> GetDisks(); 
     std::vector<Process> GetProcesses();
 };
