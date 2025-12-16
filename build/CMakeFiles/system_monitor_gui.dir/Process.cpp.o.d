@@ -1,7 +1,7 @@
 CMakeFiles/system_monitor_gui.dir/Process.cpp.o: \
- /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/Process.cpp \
+ /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/Process.cpp \
  /usr/include/stdc-predef.h \
- /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/Process.h \
+ /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/Process.h \
  /usr/include/c++/15.2.1/string \
  /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -105,7 +105,7 @@ CMakeFiles/system_monitor_gui.dir/Process.cpp.o: \
  /usr/include/c++/15.2.1/bits/uses_allocator.h \
  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
  /usr/include/c++/15.2.1/tuple \
- /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/Parser.h \
+ /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/Parser.h \
  /usr/include/c++/15.2.1/vector \
  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/15.2.1/bits/stl_vector.h \

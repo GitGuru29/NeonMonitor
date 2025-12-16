@@ -48,3 +48,20 @@ target_include_directories(system_monitor_gui PRIVATE
     ${IMGUI_DIR}/backends
     ${SDL2_INCLUDE_DIRS}
 )
+
+# 8. Installation
+install(TARGETS system_monitor_gui DESTINATION bin)
+
+# 9. Packaging (CPack)
+set(CPACK_PACKAGE_NAME "neonmonitor")
+set(CPACK_PACKAGE_VENDOR "NeonCorp")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "High-performance Cyberpunk System Monitor")
+set(CPACK_PACKAGE_VERSION "8.2.0")
+set(CPACK_PACKAGE_CONTACT "maintainer@example.com")
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/CMakeLists.txt") # Placeholder license
+
+set(CPACK_GENERATOR "DEB;TGZ")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Neon Dev Team")
+set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON) # Auto-detect dependencies like libc, sdl2
+
+include(CPack)

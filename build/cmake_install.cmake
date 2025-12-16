@@ -1,4 +1,4 @@
-# Install script for directory: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor
+# Install script for directory: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,10 +42,30 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/system_monitor_gui" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/system_monitor_gui")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/system_monitor_gui"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/system_monitor_gui")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/system_monitor_gui" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/system_monitor_gui")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/system_monitor_gui")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/system_monitor_gui.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/install_local_manifest.txt"
+  file(WRITE "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +81,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

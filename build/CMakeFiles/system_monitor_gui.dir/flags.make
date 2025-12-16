@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui" -I"/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/backends" -isystem /usr/include/SDL2
+CXX_INCLUDES = -I/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui -I/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends -isystem /usr/include/SDL2
 
 CXX_FLAGS = -std=gnu++17
 

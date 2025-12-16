@@ -1,7 +1,7 @@
 CMakeFiles/system_monitor_gui.dir/parser.cpp.o: \
- /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/parser.cpp \
+ /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/parser.cpp \
  /usr/include/stdc-predef.h \
- /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/Parser.h \
+ /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/Parser.h \
  /usr/include/c++/15.2.1/vector \
  /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -174,4 +174,7 @@ CMakeFiles/system_monitor_gui.dir/parser.cpp.o: \
  /usr/include/c++/15.2.1/bits/stl_heap.h \
  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h
+ /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15.2.1/iostream /usr/include/sys/statvfs.h \
+ /usr/include/bits/statvfs.h /usr/include/c++/15.2.1/cstring \
+ /usr/include/string.h /usr/include/strings.h

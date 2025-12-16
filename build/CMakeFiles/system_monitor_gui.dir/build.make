@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor"
+CMAKE_SOURCE_DIR = /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build"
+CMAKE_BINARY_DIR = /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/system_monitor_gui.dir/depend.make
@@ -73,144 +73,144 @@ CMakeFiles/system_monitor_gui.dir/codegen:
 .PHONY : CMakeFiles/system_monitor_gui.dir/codegen
 
 CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/main_gui.cpp
+CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/main_gui.cpp
 CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o -MF CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/main_gui.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o -MF CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/main_gui.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/main_gui.cpp
 
 CMakeFiles/system_monitor_gui.dir/main_gui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/main_gui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/main_gui.cpp" > CMakeFiles/system_monitor_gui.dir/main_gui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/main_gui.cpp > CMakeFiles/system_monitor_gui.dir/main_gui.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/main_gui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/main_gui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/main_gui.cpp" -o CMakeFiles/system_monitor_gui.dir/main_gui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/main_gui.cpp -o CMakeFiles/system_monitor_gui.dir/main_gui.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/System.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/System.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/System.cpp
+CMakeFiles/system_monitor_gui.dir/System.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/System.cpp
 CMakeFiles/system_monitor_gui.dir/System.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/system_monitor_gui.dir/System.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/System.cpp.o -MF CMakeFiles/system_monitor_gui.dir/System.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/System.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/System.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/system_monitor_gui.dir/System.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/System.cpp.o -MF CMakeFiles/system_monitor_gui.dir/System.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/System.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/System.cpp
 
 CMakeFiles/system_monitor_gui.dir/System.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/System.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/System.cpp" > CMakeFiles/system_monitor_gui.dir/System.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/System.cpp > CMakeFiles/system_monitor_gui.dir/System.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/System.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/System.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/System.cpp" -o CMakeFiles/system_monitor_gui.dir/System.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/System.cpp -o CMakeFiles/system_monitor_gui.dir/System.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/parser.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/parser.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/parser.cpp
+CMakeFiles/system_monitor_gui.dir/parser.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/parser.cpp
 CMakeFiles/system_monitor_gui.dir/parser.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/system_monitor_gui.dir/parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/parser.cpp.o -MF CMakeFiles/system_monitor_gui.dir/parser.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/parser.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/parser.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/system_monitor_gui.dir/parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/parser.cpp.o -MF CMakeFiles/system_monitor_gui.dir/parser.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/parser.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/parser.cpp
 
 CMakeFiles/system_monitor_gui.dir/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/parser.cpp" > CMakeFiles/system_monitor_gui.dir/parser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/parser.cpp > CMakeFiles/system_monitor_gui.dir/parser.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/parser.cpp" -o CMakeFiles/system_monitor_gui.dir/parser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/parser.cpp -o CMakeFiles/system_monitor_gui.dir/parser.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/Process.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/Process.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/Process.cpp
+CMakeFiles/system_monitor_gui.dir/Process.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/Process.cpp
 CMakeFiles/system_monitor_gui.dir/Process.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/system_monitor_gui.dir/Process.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/Process.cpp.o -MF CMakeFiles/system_monitor_gui.dir/Process.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/Process.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/Process.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/system_monitor_gui.dir/Process.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/Process.cpp.o -MF CMakeFiles/system_monitor_gui.dir/Process.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/Process.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/Process.cpp
 
 CMakeFiles/system_monitor_gui.dir/Process.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/Process.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/Process.cpp" > CMakeFiles/system_monitor_gui.dir/Process.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/Process.cpp > CMakeFiles/system_monitor_gui.dir/Process.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/Process.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/Process.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/Process.cpp" -o CMakeFiles/system_monitor_gui.dir/Process.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/Process.cpp -o CMakeFiles/system_monitor_gui.dir/Process.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/imgui/imgui.cpp
+CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui.cpp
 CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui.cpp
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui.cpp" > CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui.cpp > CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui.cpp" -o CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui.cpp -o CMakeFiles/system_monitor_gui.dir/imgui/imgui.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/imgui/imgui_draw.cpp
+CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_draw.cpp
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_draw.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_draw.cpp
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_draw.cpp" > CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_draw.cpp > CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_draw.cpp" -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_draw.cpp -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_draw.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/imgui/imgui_tables.cpp
+CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_tables.cpp
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_tables.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_tables.cpp
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_tables.cpp" > CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_tables.cpp > CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_tables.cpp" -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_tables.cpp -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_tables.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/imgui/imgui_widgets.cpp
+CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_widgets.cpp
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_widgets.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_widgets.cpp
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_widgets.cpp" > CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_widgets.cpp > CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/imgui_widgets.cpp" -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/imgui_widgets.cpp -o CMakeFiles/system_monitor_gui.dir/imgui/imgui_widgets.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/imgui/backends/imgui_impl_sdl2.cpp
+CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends/imgui_impl_sdl2.cpp
 CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/backends/imgui_impl_sdl2.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends/imgui_impl_sdl2.cpp
 
 CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/backends/imgui_impl_sdl2.cpp" > CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends/imgui_impl_sdl2.cpp > CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/backends/imgui_impl_sdl2.cpp" -o CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends/imgui_impl_sdl2.cpp -o CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.s
 
 CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/system_monitor_gui.dir/flags.make
-CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux\ Sytsem\ Monitor/imgui/backends/imgui_impl_opengl3.cpp
+CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o: /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/backends/imgui_impl_opengl3.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/backends/imgui_impl_opengl3.cpp" > CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/imgui/backends/imgui_impl_opengl3.cpp" -o CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.s
 
 # Object files for target system_monitor_gui
 system_monitor_gui_OBJECTS = \
@@ -241,10 +241,10 @@ system_monitor_gui: CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_
 system_monitor_gui: CMakeFiles/system_monitor_gui.dir/build.make
 system_monitor_gui: CMakeFiles/system_monitor_gui.dir/compiler_depend.ts
 system_monitor_gui: /usr/lib/libSDL2main.a
-system_monitor_gui: /usr/lib/libSDL2-2.0.so.0.3200.58
+system_monitor_gui: /usr/lib/libSDL2-2.0.so.0.3200.60
 system_monitor_gui: /usr/lib/libGL.so
 system_monitor_gui: CMakeFiles/system_monitor_gui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable system_monitor_gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable system_monitor_gui"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/system_monitor_gui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -256,6 +256,6 @@ CMakeFiles/system_monitor_gui.dir/clean:
 .PHONY : CMakeFiles/system_monitor_gui.dir/clean
 
 CMakeFiles/system_monitor_gui.dir/depend:
-	cd "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor" "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor" "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build" "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build" "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles/system_monitor_gui.dir/DependInfo.cmake" "--color=$(COLOR)" system_monitor_gui
+	cd /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/system_monitor_gui.dir/DependInfo.cmake "--color=$(COLOR)" system_monitor_gui
 .PHONY : CMakeFiles/system_monitor_gui.dir/depend
 

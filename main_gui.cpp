@@ -235,6 +235,43 @@ void SetGlassTheme() {
     style.Colors[ImGuiCol_PopupBg] = ImVec4(0.05f, 0.05f, 0.08f, 0.95f); 
 }
 
+void SetCyberpunkTheme() {
+    ImGuiStyle& style = ImGui::GetStyle();
+    style.WindowRounding = 0.0f;
+    style.FrameRounding = 0.0f;
+    style.Colors[ImGuiCol_WindowBg] = ImVec4(0.1f, 0.1f, 0.1f, 0.9f);
+    style.Colors[ImGuiCol_Border] = ImVec4(1.0f, 0.8f, 0.0f, 0.8f);
+    style.Colors[ImGuiCol_Text] = ImVec4(1.0f, 0.8f, 0.0f, 1.0f);
+    style.Colors[ImGuiCol_Header] = ImVec4(1.0f, 0.2f, 0.2f, 0.5f);
+    style.Colors[ImGuiCol_HeaderHovered] = ImVec4(1.0f, 0.2f, 0.2f, 0.7f);
+    style.Colors[ImGuiCol_HeaderActive] = ImVec4(1.0f, 0.2f, 0.2f, 0.9f);
+    style.Colors[ImGuiCol_FrameBg] = ImVec4(0.2f, 0.2f, 0.2f, 1.0f);
+    style.Colors[ImGuiCol_SliderGrab] = ImVec4(1.0f, 0.8f, 0.0f, 1.0f);
+    style.Colors[ImGuiCol_SliderGrabActive] = ImVec4(1.0f, 0.9f, 0.2f, 1.0f);
+    style.Colors[ImGuiCol_Button] = ImVec4(0.3f, 0.3f, 0.3f, 1.0f);
+    style.Colors[ImGuiCol_ButtonHovered] = ImVec4(0.4f, 0.4f, 0.4f, 1.0f);
+    style.Colors[ImGuiCol_ButtonActive] = ImVec4(0.5f, 0.5f, 0.5f, 1.0f);
+}
+
+void SetMinimalTheme() {
+    ImGuiStyle& style = ImGui::GetStyle();
+    style.WindowRounding = 4.0f;
+    style.FrameRounding = 2.0f;
+    style.Colors[ImGuiCol_WindowBg] = ImVec4(1.0f, 1.0f, 1.0f, 0.9f);
+    style.Colors[ImGuiCol_Border] = ImVec4(0.0f, 0.0f, 0.0f, 1.0f);
+    style.Colors[ImGuiCol_Text] = ImVec4(0.0f, 0.0f, 0.0f, 1.0f);
+    style.Colors[ImGuiCol_Header] = ImVec4(0.8f, 0.8f, 0.8f, 1.0f);
+    style.Colors[ImGuiCol_HeaderHovered] = ImVec4(0.7f, 0.7f, 0.7f, 1.0f);
+    style.Colors[ImGuiCol_HeaderActive] = ImVec4(0.6f, 0.6f, 0.6f, 1.0f);
+    style.Colors[ImGuiCol_FrameBg] = ImVec4(0.9f, 0.9f, 0.9f, 1.0f);
+    style.Colors[ImGuiCol_SliderGrab] = ImVec4(0.0f, 0.0f, 0.0f, 1.0f);
+    style.Colors[ImGuiCol_SliderGrabActive] = ImVec4(0.2f, 0.2f, 0.2f, 1.0f);
+    style.Colors[ImGuiCol_Button] = ImVec4(0.9f, 0.9f, 0.9f, 1.0f);
+    style.Colors[ImGuiCol_ButtonHovered] = ImVec4(0.8f, 0.8f, 0.8f, 1.0f);
+    style.Colors[ImGuiCol_ButtonActive] = ImVec4(0.7f, 0.7f, 0.7f, 1.0f);
+    style.Colors[ImGuiCol_PopupBg] = ImVec4(0.95f, 0.95f, 0.95f, 1.0f);
+}
+
 std::string FormatBytes(long bytes) {
     float gb = bytes / (1024.0f * 1024.0f * 1024.0f);
     std::stringstream ss;
@@ -281,6 +318,10 @@ int main(int, char**) {
     int selected_pid = -1; 
     bool done = false;
 
+    // UI Configuration
+    float refresh_rate = 1.0f; // Seconds
+    int current_theme = 0;     // 0: Glass, 1: Cyberpunk, 2: Minimal
+
     while (!done) {
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
@@ -294,7 +335,8 @@ int main(int, char**) {
 
         RenderCracks(); // Draw shatter over everything
 
-        if (SDL_GetTicks() - last_tick > 1000) {
+        // Use configurable refresh rate
+        if (SDL_GetTicks() - last_tick > (Uint32)(refresh_rate * 1000)) {
             c_cpu = system.GetCpuUsage();
             c_mem = system.GetMemoryUsage();
             c_net = system.GetNetworkStats();
@@ -311,6 +353,20 @@ int main(int, char**) {
 
         ImGui::TextColored(ImVec4(0.7f, 0.9f, 1.0f, 1.0f), "GLASS MONITOR // V8.2 // SHATTERED_WAY");
         ImGui::Separator();
+        
+        // --- UI CONTROLS ---
+        ImGui::PushItemWidth(150);
+        ImGui::SliderFloat("Refresh (s)", &refresh_rate, 0.1f, 5.0f, "%.1f");
+        ImGui::SameLine();
+        const char* themes[] = { "Glass", "Cyberpunk", "Minimal" };
+        if (ImGui::Combo("Theme", &current_theme, themes, IM_ARRAYSIZE(themes))) {
+            if (current_theme == 0) SetGlassTheme();
+            else if (current_theme == 1) SetCyberpunkTheme();
+            else if (current_theme == 2) SetMinimalTheme();
+        }
+        ImGui::PopItemWidth();
+        // ------------------
+
         ImGui::Spacing();
 
         if (ImGui::BeginTable("GaugesTable", 4)) {

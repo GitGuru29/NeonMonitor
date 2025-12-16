@@ -13,7 +13,7 @@ system_monitor_gui: \
   CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_sdl2.cpp.o \
   CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o \
   /usr/lib/libSDL2main.a \
-  /usr/lib/libSDL2-2.0.so.0.3200.58 \
+  /usr/lib/libSDL2-2.0.so.0.3200.60 \
   /usr/lib/libGL.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libdl.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libpthread.a \
@@ -79,7 +79,7 @@ CMakeFiles/system_monitor_gui.dir/imgui/backends/imgui_impl_opengl3.cpp.o:
 
 /usr/lib/libSDL2main.a:
 
-/usr/lib/libSDL2-2.0.so.0.3200.58:
+/usr/lib/libSDL2-2.0.so.0.3200.60:
 
 /usr/lib/libGL.so:
 

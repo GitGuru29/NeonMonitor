@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor"
+CMAKE_SOURCE_DIR = /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build"
+CMAKE_BINARY_DIR = /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/system_monitor_gui.dir/clean
 CMakeFiles/system_monitor_gui.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_monitor_gui.dir/build.make CMakeFiles/system_monitor_gui.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_monitor_gui.dir/build.make CMakeFiles/system_monitor_gui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target system_monitor_gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target system_monitor_gui"
 .PHONY : CMakeFiles/system_monitor_gui.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/system_monitor_gui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/system_monitor_gui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles 0
 .PHONY : CMakeFiles/system_monitor_gui.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ system_monitor_gui: CMakeFiles/system_monitor_gui.dir/rule
 # codegen rule for target.
 CMakeFiles/system_monitor_gui.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_monitor_gui.dir/build.make CMakeFiles/system_monitor_gui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target system_monitor_gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target system_monitor_gui"
 .PHONY : CMakeFiles/system_monitor_gui.dir/codegen
 
 # clean rule for target.

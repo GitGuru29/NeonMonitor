@@ -1,3 +1,9 @@
-/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles/system_monitor_gui.dir
-/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles/edit_cache.dir
-/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/Linux Sytsem Monitor/build/CMakeFiles/rebuild_cache.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/system_monitor_gui.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/package.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/package_source.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/edit_cache.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/rebuild_cache.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/list_install_components.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/install.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/install/local.dir
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/CMakeFiles/install/strip.dir
