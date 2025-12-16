@@ -56,7 +56,7 @@ install(TARGETS system_monitor_gui DESTINATION bin)
 set(CPACK_PACKAGE_NAME "neonmonitor")
 set(CPACK_PACKAGE_VENDOR "NeonCorp")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "High-performance Cyberpunk System Monitor")
-set(CPACK_PACKAGE_VERSION "8.2.0")
+set(CPACK_PACKAGE_VERSION "1.0.0")
 set(CPACK_PACKAGE_CONTACT "maintainer@example.com")
 set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/CMakeLists.txt") # Placeholder license
 

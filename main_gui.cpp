@@ -351,7 +351,7 @@ int main(int, char**) {
         ImGui::SetNextWindowSize(io.DisplaySize);
         ImGui::Begin("Dash", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse);
 
-        ImGui::TextColored(ImVec4(0.7f, 0.9f, 1.0f, 1.0f), "GLASS MONITOR // V8.2 // SHATTERED_WAY");
+        ImGui::TextColored(ImVec4(0.7f, 0.9f, 1.0f, 1.0f), "GLASS MONITOR // V1.0 // SHATTERED_WAY");
         ImGui::Separator();
         
         // --- UI CONTROLS ---

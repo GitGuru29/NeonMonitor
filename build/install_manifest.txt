@@ -1,1 +1,1 @@
-/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/_CPack_Packages/Linux/TGZ/neonmonitor-8.2.0-Linux/bin/system_monitor_gui
+/run/media/msfvenom/28aa095f-4b10-4a14-8ba9-4f2570fb6ce2/neonmoniter/build/_CPack_Packages/Linux/TGZ/neonmonitor-1.0.0-Linux/bin/system_monitor_gui
