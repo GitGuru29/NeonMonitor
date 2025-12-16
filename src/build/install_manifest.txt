@@ -1,0 +1,1 @@
+/usr/bin/system_monitor_gui
